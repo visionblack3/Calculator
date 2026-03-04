@@ -1,0 +1,66 @@
+.mainBody {
+    width: 400px;
+    background-color: gainsboro;
+    border: 1.5px solid black;
+    padding: 15px;
+    box-sizing: border-box;
+}
+#title {
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    color: #333;
+    text-align: center;
+}
+.dispInp{
+    margin: 10px;
+    width:350px;
+    height:40px;
+    background-color:whitesmoke;
+    /*border-radius: 15%;*/
+}
+body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+.mainGrid{
+    display: grid;
+    margin: 10px;
+    height: 300px;
+    grid-template-rows: repeat(4,50px);
+    grid-template-columns: repeat(4,80px);
+    gap: 10px;
+    grid-template-columns: 4;
+}
+#equal{
+    grid-column: span 2;
+    width: 100%;
+    background-color: blue;
+    color: white;
+}
+.calcButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    border: 0.25px solid white;
+    border-style: double;
+    font-weight:500;
+    cursor: pointer;
+}
+.calcButton[data-value="op"]
+{
+    color: blue;
+}
+#description {
+    width: 400px; /* Match your calculator width */
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0 auto 20px auto; /* Centers it and adds space below */
+    line-height: 1.4;
+}
